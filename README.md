@@ -7,7 +7,9 @@
 # 🧐 DEMO列表
 
 - [Animate.css](https://animate.style/)
-- **右键即可查看全部源码**
+- **源码**
+  - [GitHub](https://github.com/liumuge/blog-demo)
+  - [Gitee](https://gitee.com/liumuge/blog-demo)
 
 | Demo                                                         | 描述                       |
 | ------------------------------------------------------------ | -------------------------- |
