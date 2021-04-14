@@ -11,17 +11,17 @@
 
 | Demo                                                         | 描述                       |
 | ------------------------------------------------------------ | -------------------------- |
-| <a href="/demo/code/demo01.html" target="_blank">demo01</a>  | 炫彩流光圆环效果 CSS动画   |
-| <a href="/demo/code/demo02.html" target="_blank">demo02</a>  | 圆形波浪进度效果           |
-| <a href="/demo/code/demo03.html" target="_blank">demo03</a>  | 按钮3D分层悬停效果         |
-| <a href="/demo/code/demo04.html" target="_blank">demo04</a>  | 波纹按钮                   |
-| <a href="/demo/code/demo05.html" target="_blank">demo05</a>  | canvas实现鼠标跟随炫彩小球 |
-| <a href="/demo/code/demo06.html" target="_blank">demo06</a>  | canvas实现炫彩小球弹弹     |
-| <a href="/demo/code/demo07.html" target="_blank">demo07</a>  | canvas实现刮刮乐           |
-| <a href="/demo/code/demo08.html" target="_blank">demo08</a>  | 纯CSS3实现眨眼动画         |
-| <a href="/demo/code/demo09.html" target="_blank">demo09</a>  | 旋转线球                   |
-| <a href="/demo/code/demo10.html" target="_blank">demo10</a>  | 自定义开关效果             |
-| <a href="/demo/code/watch/demo.html" target="_blank">demo11</a> | 太空人表盘                 |
+| <a href="https://www.liuxianl.com/demo/code/demo01.html" target="_blank">demo01</a> | 炫彩流光圆环效果 CSS动画   |
+| <a href="https://www.liuxianl.com/demo/code/demo02.html" target="_blank">demo02</a> | 圆形波浪进度效果           |
+| <a href="https://www.liuxianl.com/demo/code/demo03.html" target="_blank">demo03</a> | 按钮3D分层悬停效果         |
+| <a href="https://www.liuxianl.com/demo/code/demo04.html" target="_blank">demo04</a> | 波纹按钮                   |
+| <a href="https://www.liuxianl.com/demo/code/demo05.html" target="_blank">demo05</a> | canvas实现鼠标跟随炫彩小球 |
+| <a href="https://www.liuxianl.com/demo/code/demo06.html" target="_blank">demo06</a> | canvas实现炫彩小球弹弹     |
+| <a href="https://www.liuxianl.com/demo/code/demo07.html" target="_blank">demo07</a> | canvas实现刮刮乐           |
+| <a href="https://www.liuxianl.com/demo/code/demo08.html" target="_blank">demo08</a> | 纯CSS3实现眨眼动画         |
+| <a href="https://www.liuxianl.com/demo/code/demo09.html" target="_blank">demo09</a> | 旋转线球                   |
+| <a href="https://www.liuxianl.com/demo/code/demo10.html" target="_blank">demo10</a> | 自定义开关效果             |
+| <a href="https://www.liuxianl.com/demo/code/watch/demo.html" target="_blank">demo11</a> | 太空人表盘                 |
 
 # 🥞 更新
 
