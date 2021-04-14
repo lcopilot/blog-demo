@@ -1,0 +1,68 @@
+<!--
+ * @Author: 橘子味雪糕
+ * @Date: 2021-02-10 19:35:16
+ * @LastEditTime: 2021-02-12 18:25:39
+ * @FilePath: \js-learnd:\WorkingArea\TyporaWorkspace\blog\source\demo\code\demo02.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: rgb(99, 129, 152);
+    }
+    .main{
+        margin: 30vh auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+
+    }
+    .box{
+       width: 150px;
+       height: 150px;
+       border-radius: 50%;
+       background-color: #91d5ff;
+       position: relative;
+       overflow: hidden;
+       box-shadow: 0 0 10px rgb(36, 36, 36);
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        left: -50%;
+        width: 300px;
+        height:300px;
+        border-radius:40%;
+        background-color: rgb(255, 255, 255);   
+        animation: rotate 8s linear infinite;
+    }
+    @keyframes rotate{
+        0% {
+            transform: rotate(0deg);
+            top: -100%;
+        }
+        100% {
+            transform: rotate(360deg);
+            top:-200%;
+        }
+    }
+</style>
+<body>
+    <a href="https://liuxianl.com">
+        <div class="main">
+            <div class="box"></div>
+        </div>
+    </a>
+   
+</body>
+</html>

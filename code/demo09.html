@@ -1,0 +1,115 @@
+<!--
+ * @Author: 橘子味雪糕
+ * @Date: 2021-03-19 16:35:29
+ * @LastEditTime: 2021-03-19 16:43:56
+ * @FilePath: \js-learnd:\WorkingArea\TyporaWorkspace\blog\source\demo\code\demo09.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>旋转线球</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            position: relative;
+            background: #000;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            perspective: 3000px;
+            perspective-origin: 50% 50%;
+        }
+
+        .wrapper {
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: 6s rotateAni linear infinite;
+            transform: rotateZ(-45deg);
+        }
+
+        .wrapper>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+
+        @keyframes rotateAni {
+            0% {
+                transform: rotateX(0deg);
+            }
+
+            /*			20% {transform: rotateX(36deg);}
+			40% {transform: rotateX(72deg);}
+			60% {transform: rotateX(108deg);}
+			80% {transform: rotateX(144deg);}*/
+            100% {
+                transform: rotateX(180deg);
+            }
+        }
+
+        .div1 {
+            transform: rotateY(80deg);
+            border-radius: 50%;
+        }
+
+        .div2 {
+            transform: rotateX(80deg);
+            border-radius: 50%;
+        }
+
+        .div3 {
+            transform: rotateZ(80deg);
+
+        }
+
+        .div4 {
+            transform: rotateX(70deg);
+        }
+
+        .div5 {
+            transform: rotateY(70deg);
+        }
+
+        .div6 {
+            transform: rotateY(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://liuxianl.com">
+        <div class="container">
+            <div class="wrapper">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+                <div class="div5"></div>
+            </div>
+        </div>
+    </a>
+</body>
+
+</html>

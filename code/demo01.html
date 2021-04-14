@@ -1,0 +1,87 @@
+<!--
+ * @Author: 橘子味雪糕
+ * @Date: 2021-02-10 18:31:36
+ * @LastEditTime: 2021-02-12 18:25:26
+ * @FilePath: \js-learnd:\WorkingArea\TyporaWorkspace\blog\source\demo\code\demo01.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
+    position: relative;
+  }
+
+  .main:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, rgb(47, 102, 255), rgb(161, 79, 255) 30%, rgb(238, 55, 255) 60%, rgb(255, 0, 76) 100%);
+    filter: blur(30px);
+    animation: rotate 1s linear infinite;
+  }
+
+  .main::after {
+    content: '橘子味雪糕';
+    text-align: center;
+    line-height: 150px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .box {}
+</style>
+
+<body>
+    <a href="https://liuxianl.com">
+        <div class="main">
+        </div>
+    </a>
+  
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!--
+ * @Author: 橘子味雪糕
+ * @Date: 2021-02-10 19:40:30
+ * @LastEditTime: 2021-02-12 18:26:19
+ * @FilePath: \js-learnd:\WorkingArea\TyporaWorkspace\blog\source\demo\code\demo04.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #282c34;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            width: 640px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 200px;
+            height: 90px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .box:nth-of-type(1) {
+            background-image: linear-gradient(45deg, #F43f3b, #Ec008c);
+        }
+
+        .box:nth-of-type(2) {
+            background-image: linear-gradient(45deg, #Ff9700, #Ed1c24);
+        }
+
+        .box:nth-of-type(3) {
+            background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+        }
+
+        .box:nth-of-type(4) {
+            background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
+        }
+
+        .box:nth-of-type(5) {
+            background-image: linear-gradient(45deg, #9000ff, #5e00ff);
+        }
+
+        .box:nth-of-type(6) {
+            background-image: linear-gradient(45deg, #Ec008c, #6739b6);
+        }
+
+        .hover {
+            display: block;
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(0);
+
+        }
+
+        .animation {
+            animation: scale .8s ease-in;
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://liuxianl.com">
+        <div class="main">
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+            <div class="box">
+                <span class="hover"></span>
+            </div>
+        </div>
+    </a>
+   
+    <script>
+        let boxs = document.querySelectorAll('.box')
+        for (let i = 0; i < boxs.length; i++) {
+            boxs[i].onmouseenter = function (e) {
+                let hovers = boxs[i].querySelector('.hover')
+                hovers.classList.add('animation')
+                hovers.style.width = this.offsetWidth + "px"
+                hovers.style.height = this.offsetWidth + "px"
+                hovers.style.top = -(this.offsetHeight - e.offsetY) + "px"
+                hovers.style.left = -(this.offsetWidth / 2 - e.offsetX) + "px"
+                setTimeout(function () {
+                    hovers.classList.remove("animation")
+                }, 500)
+
+            }
+        }
+    </script>
+</body>
+
+</html>

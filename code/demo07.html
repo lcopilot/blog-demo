@@ -1,0 +1,61 @@
+<!--
+ * @Author: 橘子味雪糕
+ * @Date: 2021-02-13 19:24:13
+ * @LastEditTime: 2021-02-13 19:37:21
+ * @FilePath: \js-learnd:\WorkingArea\VScodeWorkspace\canvas-learn\demo20.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 200px auto;
+            position: relative;
+            border: 1px solid;
+            width: 250px;
+            height: 80px;
+            font-size: 40px;
+            line-height: 80px;
+            text-align: center;
+            user-select: none;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        特等奖
+        <canvas width="250" height="80"></canvas>
+    </div>
+    <script>
+        var can = document.querySelector("canvas");
+        var ctx = can.getContext("2d")
+        ctx.fillStyle = "#999"
+        ctx.fillRect(0, 0, 250, 80)
+        // 设置新画的元素，实际上是擦除之前的元素
+        ctx.globalCompositeOperation = "destination-out"
+        // 鼠标按下
+        can.onmousedown = function () {
+            // 拖动
+            can.onmousemove = function (event) {
+                // 画图
+                ctx.beginPath();
+                ctx.arc(event.offsetX,event.offsetY,10,0,7,false)
+                ctx.fill()
+            }
+        }
+    </script>
+</body>
+
+</html>
